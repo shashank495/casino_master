@@ -1,0 +1,261 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
+/* font-family: 'Josefin Sans', sans-serif; */
+/* font-family: 'Nunito', sans-serif; */
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+html {
+  font-size: 25px;
+  font-family: var(--font1);
+}
+:root {
+  --font1: "Nunito", sans-serif;
+  --font2: "Josefin Sans", sans-serif;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(to right, #c02425, #f0cb35);
+  background-size: cover;
+}
+.body {
+  width: 100%;
+  height: 100vh;
+  /* background: rgba(255, 255, 255, 0.5); */
+  display: flex;
+}
+.btn {
+  padding: 10px;
+  font-size: 24px;
+  background: #2980b9;
+  color: aliceblue;
+  font-family: var(--font2);
+  border: none;
+  border-radius: 8px;
+  margin: 10px;
+}
+.btn:hover {
+  background: #8abff5;
+  cursor: pointer;
+}
+.btn:active {
+  background: #292b2c;
+}
+.btn2 {
+  background: brown;
+}
+.btn2:hover {
+  background: burlywood;
+}
+.container-left {
+  width: 50%;
+  /* background: aqua; */
+}
+.container-right {
+  width: 50%;
+  /* background: blue; */
+}
+.buttons-container {
+  display: grid;
+  grid: auto / auto auto auto auto;
+  /* background: blueviolet; */
+  width: 80%;
+  height: 30%;
+  margin: auto;
+  margin-top: 20px;
+}
+.mymoney-container {
+  background: burlywood;
+  margin: auto;
+  width: 30%;
+  height: 30%;
+  margin-top: 50px;
+  position: relative;
+  border-radius: 15px;
+  /* vertical-align: middle; */
+}
+.mymoney {
+  /* text-align: center; */
+  top: 28%;
+  left: 28%;
+  position: absolute;
+  /* padding-top: 50%; */
+  /* margin-top: 50%; */
+}
+.buttons-container-right {
+  /* background: chartreuse; */
+  width: 80%;
+  margin: auto;
+  height: 20%;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: flex;
+  /* grid: auto / auto auto; */
+  justify-content: center;
+  /* background: chartreuse; */
+}
+.cont1 {
+  width: 50%;
+  height: 70%;
+  background: #2980b9;
+  text-align: center;
+  font-size: 60px;
+  margin: 20px;
+  border-radius: 8px;
+  font-family: var(--font1);
+}
+.cont2 {
+  width: 50%;
+  height: 70%;
+  background: chocolate;
+  text-align: center;
+  font-size: 60px;
+  margin: 20px;
+  border-radius: 8px;
+  font-family: var(--font1);
+  background: brown;
+}
+.btn-right {
+  font-size: 45px;
+  padding: 15px;
+  text-align: center;
+  height: 150px;
+  /* margin: auto; */
+}
+.play {
+  position: absolute;
+  top: 70%;
+  left: 46%;
+  font-size: 30px;
+  font-family: var(--font1);
+  /* right: 50%; */
+  padding: 20px;
+  border-radius: 50%;
+  border: 2px solid white;
+  width: 120px;
+  height: 120px;
+  background: #8abff5;
+}
+.play:hover {
+  background: yellowgreen;
+  font-size: 38px;
+  cursor: pointer;
+}
+.mymoney-container-right {
+  background: burlywood;
+  margin: auto;
+  width: 30%;
+  height: 30%;
+  margin-top: 90px;
+  position: relative;
+  border-radius: 15px;
+}
+.mywin {
+  top: 28%;
+  left: 37%;
+  position: absolute;
+}
+.container-points {
+  position: absolute;
+  top: 36%;
+  left: 41%;
+  font-size: 50px;
+  color: white;
+  background: black;
+  border-radius: 50%;
+  height: 250px;
+  width: 250px;
+  text-align: center;
+  padding: 20px;
+}
+.reset {
+  position: absolute;
+  top: 90%;
+  left: 48.5%;
+  border-radius: 50%;
+  border: none;
+  height: 50px;
+  width: 50px;
+  background: #2980b9;
+}
+.reset:hover {
+  background: blueviolet;
+  cursor: pointer;
+}
+.hidden {
+  display: none;
+}
+.column-flex {
+  display: flex;
+  flex-direction: column;
+  vertical-align: middle;
+}
+.instructions {
+  background: blueviolet;
+  position: absolute;
+  width: 50%;
+  height: 0px;
+  margin: 50px;
+}
+.winlosetext {
+  font-size: 35px;
+  font-family: var(--font2);
+  position: absolute;
+  top: 80%;
+  right: 2%;
+}
+.insbook {
+  /* width: 50px; */
+  position: absolute;
+  right: 00px;
+  background: lightseagreen;
+  cursor: pointer;
+}
+.insbook:hover {
+  background: lightskyblue;
+}
+.closemodal {
+  right: 20px;
+  position: absolute;
+  cursor: pointer;
+}
+.rules-heading {
+  font-family: var(--font2);
+  margin: 20px;
+  /* justify-content: center; */
+  font-size: 40px;
+  text-align: center;
+}
+.rules-description {
+  font-size: 20px;
+  margin: 15px;
+}
+ol.rule-desc {
+  font-size: 20px;
+  margin: 20px;
+  margin-left: 60px;
+}
+li {
+  margin-bottom: 10px;
+}
+.overlay {
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  backdrop-filter: blur(3px);
+  background: rgba(0, 0, 0, 0.6);
+}
+.rules {
+  position: absolute;
+  width: 70%;
+  height: 450px;
+  background: lightcyan;
+  z-index: 2;
+  top: 15%;
+  left: 15%;
+  border-radius: 10px;
+}
